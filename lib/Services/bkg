@@ -1,0 +1,116 @@
+// import 'package:cloud_firestore/cloud_firestore.dart';
+// import 'package:firebase_auth/firebase_auth.dart';
+// import 'package:flutter/material.dart';
+// import 'package:google_sign_in/google_sign_in.dart';
+// import 'package:todo2/Pages/homePage.dart';
+
+// // class GoogleAuthServices {
+// //   final BuildContext context;
+
+// //   GoogleAuthServices(this.context);
+
+// //   Future<void> signInWithGoogle() async {
+// //     try {
+// //       final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+// //       if (googleUser == null) {
+// //         // The user canceled the sign-in
+// //         return;
+// //       }
+
+// //       final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+// //       final AuthCredential credential = GoogleAuthProvider.credential(
+// //         accessToken: googleAuth.accessToken,
+// //         idToken: googleAuth.idToken,
+// //       );
+
+
+// //       print("Print credential:${credential}");
+
+      
+
+// //       // Check if the user is already registered in Firestore
+// //       // if (credential. != null) {
+// //       //   bool isUserRegistered = await isUserRegisteredInFirestore(userCredential.user!);
+// //       //   if (isUserRegistered) {
+// //       //     // User is registered, allow them to sign in
+// //       //     final UserCredential userCredential = await FirebaseAuth.instance.signInWithCredential(credential);
+// //       //     Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+// //       //       return HomePage();
+// //       //     }));
+// //       //   } else {
+// //       //     // User is not registered, you can handle this case (e.g., show an error message)
+// //       //     print("User is not registered");
+// //       //     // You can also sign the user out if they are not registered
+// //       //     await FirebaseAuth.instance.signOut();
+// //       //   }
+// //       // }
+// //     } catch (e) {
+// //       // Handle errors if the sign-in fails
+// //       print("Error signing in with Google: $e");
+// //     }
+// //   }
+
+// //   Future<bool> isUserRegisteredInFirestore(User user) async {
+// //     final userCollection = FirebaseFirestore.instance.collection("Users");
+// //     final userDoc = await userCollection.doc(user.email).get();
+// //     return userDoc.exists;
+// //   }
+
+// //   signUpWithGoogle() async {
+   
+// //   }
+// // }
+
+
+// class GoogleAuthServices {
+  // final BuildContext context;
+
+  // GoogleAuthServices(this.context);
+
+//   Future<void> signInWithGoogle() async {
+//     try {
+//       final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+//       if (googleUser == null) {
+//         // The user canceled the sign-in
+//         return;
+//       }
+
+//       final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+//       final AuthCredential credential = GoogleAuthProvider.credential(
+//         accessToken: googleAuth.accessToken,
+//         idToken: googleAuth.idToken,
+//       );
+
+//       print("Print credential: $credential");
+
+//       // Check if the user is already registered in Firestore
+//       final userCredential = await FirebaseAuth.instance.toString;
+//       print("Print credential: $userCredential");
+//       final isUserRegistered = await isUserRegisteredInFirestore(userCredential as User);
+
+      // if (isUserRegistered) {
+      //   // User is registered, allow them to sign in
+      //   Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) {
+      //     return HomePage();
+      //   }));
+      // } else {
+      //   // User is not registered, you can handle this case (e.g., show an error message)
+      //   print("User is not registered");
+      //   // You can also sign the user out if they are not registered
+      //   await FirebaseAuth.instance.signOut();
+      // }
+//     } catch (e) {
+//       // Handle errors if the sign-in fails
+//       print("Error signing in with Google: $e");
+//     }
+//   }
+
+//   Future<bool> isUserRegisteredInFirestore(User user) async {
+//     final userCollection = FirebaseFirestore.instance.collection("Users");
+//     final userDoc = await userCollection.doc(user.uid).get();
+
+//     return userDoc.exists;
+//   }
+// }
+
+
